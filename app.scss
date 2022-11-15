@@ -1,0 +1,96 @@
+
+body{
+    
+background: linear-gradient(90deg, hsla(180, 13%, 58%, 1) 0%, hsla(335, 16%, 61%, 1) 100%);
+}
+
+header{
+    display:flex;
+    justify-content: space-evenly;
+    
+}
+
+.search {
+
+    display: flex;
+    border-radius: 60px;
+    padding: 4px;
+    
+    
+    
+   input{
+    width: 300px;
+    border: 1px solid;
+    border:none ;
+    height: 25px;
+    text-align: center;
+    border-top-left-radius: 50px;
+border-bottom-left-radius: 50px;
+opacity: 0.5;
+
+
+   }
+   button{
+    height: 27px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: none;
+    background-color: #fff;
+    opacity: 0.5;
+   }
+  
+}
+
+main{
+margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+
+    .inner{
+        border-radius: 15px;
+      display: block;
+
+        width: 800px;
+        height: 500px;
+    }
+}
+
+.first{
+ grid-column: span 12;
+}
+#sub,#time{
+    font-size: 1.25rem;
+    color: #fff;
+    padding: 5px;
+}
+#tnumber{
+    font-size: 6rem;
+}
+.information{
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.images{
+    height: 100px;
+    img{
+        height: 100px;
+    }
+}
+
+select{
+    opacity: 0.5;
+    color: blue;
+}
+.unit{
+    font-size:4px; 
+}
+
+.day{
+    background: linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
+}
+.night{
+    background: linear-gradient(90deg, hsla(208, 7%, 55%, 1) 0%, hsla(191, 5%, 40%, 1) 100%);
+}
