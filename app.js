@@ -6,13 +6,11 @@ const options = document.querySelector('#tems')
 
 
 const accKey ="B8TpAcY2UouDSUxA6Ax2R6kz0027Bj54"
- const acc =`http://dataservice.accuweather.com/locations/v1/cities/geoposition/search`
 let cityName= "accra"
 let tems =  "C"
 let Times;
 
 
-const condition =`http://dataservice.accuweather.com/currentconditions/v1/{locationKey}`
 form.addEventListener('submit',(e)=>{
 e.preventDefault()
 const element = form.elements[0]
@@ -20,16 +18,15 @@ console.log(element.value)
 cityName = element.value
 weatherM()
 
-}) 
+})
+
 options.addEventListener('change',(e)=>{
     tems = e.target.value
     weatherM()
-
 })
 
 const weatherM =()=>{
   cityCode(cityName).then(data => getWeather(data))
-
 }
 
 
@@ -42,8 +39,7 @@ const getWeather=async(id)=>{
     const data =await result[0]
     setTemp(data.Temperature,data.WeatherText,data.WeatherIcon,data.LocalObservationDateTime)
     dayNight(data.IsDayTime)
- 
-   
+    console.log(result)
 }
 
 //getting city code
@@ -54,14 +50,14 @@ const cityCode = async(town)=>{
     const result = await response.json()
     const data = await result[0]
     setCountry(data.LocalizedName,data.Country)
-   
+    console.log(data.Country)
     return data.Key
 }
 
+
 const setCountry=(city,country)=>{
-    const {ID} =country
-  
-    document.getElementById('sub').innerHTML=`${city} , ${ID}`
+    const {LocalizedName} =country  
+    document.getElementById('sub').innerHTML=`${city} , ${LocalizedName}`
 }
 
 const setTemp =(tempreture,weather,icon,time)=>{
@@ -76,8 +72,6 @@ if(tems ==='F'){
 let timez = time.slice(0,-6)
 let times = timez.replace('T', " ")
 document.getElementById('time').innerHTML=`${new Date(times).toLocaleTimeString()}`
-
-console.log( )
 const temps =` <div id="tnumber">${condition}</div>
 <p>${weather}</p>
 `
