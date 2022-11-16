@@ -14,7 +14,6 @@ let Times;
 form.addEventListener('submit',(e)=>{
 e.preventDefault()
 const element = form.elements[0]
-console.log(element.value)
 cityName = element.value
 weatherM()
 
@@ -50,7 +49,6 @@ const cityCode = async(town)=>{
     const result = await response.json()
     const data = await result[0]
     setCountry(data.LocalizedName,data.Country)
-    console.log(data.Country)
     return data.Key
 }
 

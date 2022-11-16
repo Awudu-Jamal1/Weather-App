@@ -1,6 +1,6 @@
 
 body{
-    
+    color: #f2e8cf;
 background: linear-gradient(90deg, hsla(180, 13%, 58%, 1) 0%, hsla(335, 16%, 61%, 1) 100%);
 }
 
@@ -66,7 +66,7 @@ margin-top: 20px;
     padding: 5px;
 }
 #tnumber{
-    font-size: 6rem;
+    font-size: 4rem;
 }
 .information{
     padding: 10px;
@@ -93,4 +93,11 @@ select{
 }
 .night{
     background: linear-gradient(90deg, hsla(208, 7%, 55%, 1) 0%, hsla(191, 5%, 40%, 1) 100%);
+}
+
+.log{
+    font-size: 1.5rem;
+    font-weight: 600;
+    word-spacing: 10px;
+    color: #f2e8cf;
 }

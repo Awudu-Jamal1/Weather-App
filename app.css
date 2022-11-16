@@ -1,4 +1,5 @@
 body {
+  color: #f2e8cf;
   background: linear-gradient(90deg, hsl(180deg, 13%, 58%) 0%, hsl(335deg, 16%, 61%) 100%);
 }
 
@@ -56,7 +57,7 @@ main .inner {
 }
 
 #tnumber {
-  font-size: 6rem;
+  font-size: 4rem;
 }
 
 .information {
@@ -86,4 +87,11 @@ select {
 
 .night {
   background: linear-gradient(90deg, hsl(208deg, 7%, 55%) 0%, hsl(191deg, 5%, 40%) 100%);
+}
+
+.log {
+  font-size: 1.5rem;
+  font-weight: 600;
+  word-spacing: 10px;
+  color: #f2e8cf;
 }/*# sourceMappingURL=app.css.map */
