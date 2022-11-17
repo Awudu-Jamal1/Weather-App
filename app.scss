@@ -47,6 +47,7 @@ margin-top: 20px;
     justify-content: center;
     width: 100%;
     text-align: center;
+    box-shadow: -1px 2px 34px -3px rgba(0,0,0,0.75);
 
     .inner{
         border-radius: 15px;
@@ -59,7 +60,7 @@ margin-top: 20px;
 
 .first{
  grid-column: span 12;
- box-shadow: -1px 2px 34px -3px rgba(0,0,0,0.75);
+ 
 }
 
 .back{
