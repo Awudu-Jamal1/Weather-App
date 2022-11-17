@@ -1,6 +1,6 @@
 
 body{
-    color: #f2e8cf;
+    color: #6d6875;
 background: linear-gradient(90deg, hsla(180, 13%, 58%, 1) 0%, hsla(335, 16%, 61%, 1) 100%);
 }
 
@@ -59,7 +59,15 @@ margin-top: 20px;
 
 .first{
  grid-column: span 12;
+ box-shadow: -1px 2px 34px -3px rgba(0,0,0,0.75);
 }
+
+.back{
+    height: 50px;
+    padding-top: 20px;
+    
+}
+
 #sub,#time{
     font-size: 1.25rem;
     color: #fff;
@@ -99,5 +107,5 @@ select{
     font-size: 1.5rem;
     font-weight: 600;
     word-spacing: 10px;
-    color: #f2e8cf;
+    color: #6d6875;
 }

@@ -31,7 +31,7 @@ const weatherM =()=>{
 
 //get weather
 const getWeather=async(id)=>{
-    const weatherurl ='http://dataservice.accuweather.com/currentconditions/v1/'
+    const weatherurl ='https://dataservice.accuweather.com/currentconditions/v1/'
     const find = `${id}?apikey=${accKey}`
     const response = await fetch(weatherurl + find)
     const result = await response.json()
@@ -43,7 +43,7 @@ const getWeather=async(id)=>{
 
 //getting city code
 const cityCode = async(town)=>{
-    const city ="http://dataservice.accuweather.com/locations/v1/cities/search"
+    const city ="https://dataservice.accuweather.com/locations/v1/cities/search"
     const find =`?apikey=${accKey}&q=${town}`
     const response = await fetch(city + find)
     const result = await response.json()

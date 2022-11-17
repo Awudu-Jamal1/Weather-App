@@ -1,5 +1,5 @@
 body {
-  color: #f2e8cf;
+  color: #6d6875;
   background: linear-gradient(90deg, hsl(180deg, 13%, 58%) 0%, hsl(335deg, 16%, 61%) 100%);
 }
 
@@ -48,6 +48,12 @@ main .inner {
 
 .first {
   grid-column: span 12;
+  box-shadow: -1px 2px 34px -3px rgba(0, 0, 0, 0.75);
+}
+
+.back {
+  height: 50px;
+  padding-top: 20px;
 }
 
 #sub, #time {
@@ -93,5 +99,5 @@ select {
   font-size: 1.5rem;
   font-weight: 600;
   word-spacing: 10px;
-  color: #f2e8cf;
+  color: #6d6875;
 }/*# sourceMappingURL=app.css.map */
