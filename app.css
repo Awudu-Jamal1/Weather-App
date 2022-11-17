@@ -38,13 +38,13 @@ main {
   justify-content: center;
   width: 100%;
   text-align: center;
-  box-shadow: -1px 2px 34px -3px rgba(0, 0, 0, 0.75);
 }
 main .inner {
   border-radius: 15px;
   display: block;
   width: 800px;
   height: 500px;
+  box-shadow: -1px 2px 34px -3px rgba(0, 0, 0, 0.75);
 }
 
 .first {
