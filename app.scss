@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
 
 body{
     color: #6d6875;
 background: linear-gradient(90deg, hsla(180, 13%, 58%, 1) 0%, hsla(335, 16%, 61%, 1) 100%);
+
+font-family: 'Roboto', sans-serif;
 }
 
 header{
@@ -15,6 +20,7 @@ header{
     display: flex;
     border-radius: 60px;
     padding: 4px;
+    box-shadow: 5px 5px 10px;
     
     
     
@@ -30,6 +36,10 @@ opacity: 0.5;
 
 
    }
+input:focus{
+    outline: none;
+}
+
    button{
     height: 27px;
     border-top-right-radius: 50px;
@@ -74,6 +84,7 @@ margin-top: 20px;
     font-size: 1.25rem;
     color: #fff;
     padding: 5px;
+    letter-spacing: 2px;
 }
 #tnumber{
     font-size: 4rem;
@@ -92,7 +103,9 @@ margin-top: 20px;
 
 select{
     opacity: 0.5;
-    color: blue;
+}
+select:focus{
+    outline: none;
 }
 .unit{
     font-size:4px; 
@@ -108,6 +121,6 @@ select{
 .log{
     font-size: 1.5rem;
     font-weight: 600;
-    word-spacing: 10px;
-    color: #6d6875;
+    letter-spacing: 3px;
+    color: #edede9;
 }
